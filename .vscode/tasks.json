@@ -1,0 +1,127 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe 词法分析json文件生成器",
+            "command": "D:\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "-O3",
+                "lexer_json.cpp",
+                "token/*.cpp",
+                "lexer/*.cpp",
+                "json/*.cpp",
+                "-o",
+                "${fileDirname}\\lexer.exe",
+                "-static",
+                "-I",
+                "${workspaceFolder}",
+                "-std=c++17",
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "调试器生成的任务。"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe 抽象语法树json文件生成器",
+            "command": "D:\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "-O3",
+                "ast_json.cpp",
+                "token/*.cpp",
+                "lexer/*.cpp",
+                "json/*.cpp",
+                "ast/*.cpp",
+                "parser/*.cpp",
+                "-o",
+                "${fileDirname}\\ast.exe",
+                "-static",
+                "-I",
+                "${workspaceFolder}",
+                "-std=c++17",
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "调试器生成的任务。"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe 抽象语法树求值",
+            "command": "D:\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "-O3",
+                "eval.cpp",
+                "token/*.cpp",
+                "lexer/*.cpp",
+                "json/*.cpp",
+                "ast/*.cpp",
+                "parser/*.cpp",
+                "object/*.cpp",
+                "evaluator/*.cpp",
+                "-o",
+                "${fileDirname}\\cpy.exe",
+                "-static",
+                "-I",
+                "${workspaceFolder}",
+                "-std=c++17",
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "调试器生成的任务。"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe cpy语言交互式环境",
+            "command": "D:\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "-O3",
+                "eval_repl.cpp",
+                "token/*.cpp",
+                "lexer/*.cpp",
+                "json/*.cpp",
+                "ast/*.cpp",
+                "parser/*.cpp",
+                "object/*.cpp",
+                "evaluator/*.cpp",
+                "-o",
+                "${fileDirname}\\cpy_repl.exe",
+                "-static",
+                "-I",
+                "${workspaceFolder}",
+                "-std=c++17",
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "调试器生成的任务。"
+        },
+    ],
+    "version": "2.0.0"
+}
